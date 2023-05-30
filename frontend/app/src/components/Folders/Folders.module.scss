@@ -1,0 +1,139 @@
+@use 'sass:math';
+
+.foldersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.folderContainer {
+  width: calc(#{math.div(100, 3) + '%'} - #{math.div(24 * 2, 3)}px);
+  min-width: 320px;
+}
+
+.folder {
+  background-color: #28292C;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.folderHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #FFFFFF;
+  flex-grow: 1;
+}
+
+.icons {
+  flex-shrink: 0;
+
+  svg {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.stats {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background-color: #333437;
+  border-radius: 5px;
+  padding: 8px 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.statPoint {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  > span {
+    display: block;
+  }
+}
+
+.bookIcon {
+  &::before {
+    background-image: url("@SVG/book_white.svg");
+  }
+}
+
+.peopleIcon {
+  &::before {
+    background-image: url("@SVG/user.svg");
+  }
+}
+
+.styleList {
+  display: flex;
+  gap: 8px;
+}
+
+.file {
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  width: calc(#{math.div(100, 3) + '%'} - #{math.div(8 * 2, 3)}px);
+  position: relative;
+
+  > img {
+    display: block;
+  }
+}
+
+.additionalFiles {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filesListPopup {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.filePopup {
+  > img {
+    display: block;
+  }
+}

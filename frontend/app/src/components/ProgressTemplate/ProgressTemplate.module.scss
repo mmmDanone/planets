@@ -1,0 +1,51 @@
+@use "sass:math";
+
+.progressTemplate {
+  padding: 16px 24px;
+  background-color: #28292B;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: calc(#{math.div(100, 3) + '%'} - #{math.div(16 * 2, 3)}px);
+}
+
+.progressIndicator {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.count {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.completed {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}

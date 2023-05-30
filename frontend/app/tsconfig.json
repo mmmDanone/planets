@@ -1,0 +1,40 @@
+// tsconfig in details
+// https://gist.github.com/KRostyslav/82a25c469ffa6652825d58537ac6bc22
+
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "allowJs": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    // change here + webpack/config/paths.ts + jest.config.js + .eslintrc.json
+    "paths": {
+      "@/*": ["./*"],
+      "@UI/*": ["components/UI/*"],
+      "@hooks/*": ["customHooks/*"],
+      "@reduxHooks": ["redux/hooks"],
+      "@SVG/*?uri": ["assets/SVG/*"],
+      "@SVG/*": ["assets/SVG/*"],
+      "@utils/*": ["utils/*"]
+    },
+  },
+  "include": [
+    "src"
+  ]
+}

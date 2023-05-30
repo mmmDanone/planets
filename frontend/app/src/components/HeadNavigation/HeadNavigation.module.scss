@@ -1,0 +1,83 @@
+.headNavigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8C8B8E;
+  border: none;
+  background-color: transparent;
+  padding: 14px;
+}
+
+.notification {
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.userName {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #FFFFFF;
+  text-align: right;
+}
+
+.userRole {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  color: #939495;
+  text-align: right;
+}
+
+.userAvatar {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.avatarContainer {
+  position: relative;
+}
+
+.userOnline {
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #67D37F;
+    border: 2px solid #28292B;
+  }
+}
+
+.controller {
+  background-color: #fff;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  right: 0;
+  width: 350px;
+}

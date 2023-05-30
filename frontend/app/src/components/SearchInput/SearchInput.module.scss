@@ -1,0 +1,31 @@
+.inputContainer {
+  position: relative;
+}
+
+.input {
+  background-color: #222325;
+  border: none;
+  outline: none;
+  padding: 12.5px 12.5px 12.5px 56px;
+  border-radius: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 380px;
+
+  color: #FFFFFF;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+.icon {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 16px;
+}

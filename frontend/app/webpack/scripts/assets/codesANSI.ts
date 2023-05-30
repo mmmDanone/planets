@@ -1,0 +1,39 @@
+export const reset = '\x1b[0m';
+
+export const boldOn = '\x1b[1m';
+export const boldOff = '\x1b[22m';
+export const dimOn = '\x1b[2m';
+export const dimOff = '\x1b[22m';
+export const italicOn = '\x1b[3m';
+export const italicOff = '\x1b[23m';
+export const underscoreOn = '\x1b[4m';
+export const underscoreOff = '\x1b[24m';
+export const blinkOn = '\x1b[5m'; //not working
+export const blinkOff = '\x1b[25m'; //not working
+export const reverseOn = '\x1b[7m';
+export const reverseOff = '\x1b[27m';
+export const hiddenOn = '\x1b[8m'; //not working
+export const hiddenOff = '\x1b[28m'; //not working
+export const strikethroughOn = '\x1b[9m'; //not working
+export const strikethroughOff = '\x1b[29m'; //not working
+
+export const fgReset = '\x1b[39m';
+export const fgBlack = '\x1b[30m';
+export const fgRed = '\x1b[31m';
+export const fgGreen = '\x1b[32m';
+export const fgOrange = '\x1b[33m';
+export const fgYellow = '\x1b[93m';
+export const fgBlue = '\x1b[34m';
+export const fgMagenta = '\x1b[35m';
+export const fgCyan = '\x1b[36m';
+export const fgWhite = '\x1b[37m';
+
+export const bgReset = '\x1b[49m';
+export const bgBlack = '\x1b[40m';
+export const bgRed = '\x1b[41m';
+export const bgGreen = '\x1b[42m';
+export const bgBlue = '\x1b[44m';
+export const bgYellow = '\x1b[43m';
+export const bgMagenta = '\x1b[45m';
+export const bgCyan = '\x1b[46m';
+export const bgWhite = '\x1b[47m';

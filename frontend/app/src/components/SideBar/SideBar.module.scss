@@ -1,0 +1,14 @@
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.logotype {
+  flex-shrink: 0;
+  padding: 20px 12px;
+}
+
+.links {
+  flex-grow: 1;
+}

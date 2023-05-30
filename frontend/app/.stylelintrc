@@ -1,0 +1,15 @@
+{
+  "customSyntax": "postcss-scss",
+  "fix": true,
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "selector-class-pattern": ["^([A-Za-z0-9]+)$", {
+      "message": "Expected class selector to be camelCase"
+    }],
+  "no-empty-source": null
+  }
+}

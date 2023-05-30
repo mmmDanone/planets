@@ -1,0 +1,46 @@
+@use "sass:color";
+
+.listLinks {
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #939495;
+  transition: color, background-color 300ms ease-out;
+
+  &Icon {
+    margin-right: 16px;
+
+    > * {
+      fill: currentColor;
+    }
+  }
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: color.adjust(#7789EA, $lightness: 15%);
+  }
+
+  &Active {
+    color: #FFFFFF;
+    background-color: #7789EA !important;
+  }
+}
+
+.separator {
+  border: none;
+  height: 1px;
+  background-color: #333539;
+}

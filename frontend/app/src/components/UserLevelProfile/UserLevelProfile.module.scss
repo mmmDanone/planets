@@ -1,0 +1,89 @@
+.userLevelProfile {
+  padding: 40px 32px;
+  background-color: #28292B;
+  border-radius: 10px;
+  width: 264px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.greetingHeader {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.image {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #68696b;
+}
+
+.levelContainer {
+  position: relative;
+  margin: 28px 0;
+}
+
+.level {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgLevel {
+  display: block;
+}
+
+.levelCount {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.levelTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  max-width: 60px;
+}
+
+.levelIndicator {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
