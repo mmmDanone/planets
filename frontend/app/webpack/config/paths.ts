@@ -4,7 +4,7 @@ import getIP from './assets/getIP';
 
 export default <const>{
   root: __dirname,
-  publicURL: '/',
+  publicURL: '',
   mainEntry: path.resolve(__dirname, 'src/index.tsx'),
   srcPath: path.resolve(__dirname, 'src'),
   publicPath: path.resolve(__dirname, 'public'),
